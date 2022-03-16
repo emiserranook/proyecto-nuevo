@@ -1,11 +1,11 @@
 
 import './App.css';
 import Navbar from './componentes/Navbar';
-import Ventana from './componentes/Ventana';
-import Ventana2 from './componentes/Ventana2';
 
 
-function App() {
+import Products from "./componentes/Products";
+import imagen from './assets/imagen';
+function App () {
   return (
     <div className="App">
       
@@ -14,12 +14,15 @@ function App() {
       
         Munchen casa de cervezas
         <style>{"body { background-color: grey; }"}</style>
-      <Ventana/> <Ventana2/>
-
-
+        <Products/>
+        
+        
       </h1>
+      <h2> By Serrano Matias</h2>
+        <img src = {imagen.img1}/>
     </div>
   );
+  
 }
 
 export default App;
